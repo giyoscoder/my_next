@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    input {
+        @apply md:max-w-[360px] w-full py-3 px-[14px] border border-[#D0D5DD] rounded-lg placeholder:text-base placeholder:font-normal bg-white outline-none
+    }
+}
+
+
+body {
+    ::selection {
+        display: none;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../public/Assets/Fonts/Jura-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url('../public/Assets/Fonts/RussoOne-Regular.ttf');
+}
+
+.font-jura {
+    font-family: 'Jura';
+}
+
+.font-russo {
+    font-family: 'Russo';
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+/* Swiper style */
+.swiper-pagination-bullet {
+    background-color: #101828 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .swiper-pagination-bullet {
+        display: none !important;
+    }
+}
+
+.cooperation_slider>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+}
