@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { extra_icon_img, heating_icon_img, setting_icon_img, pipes_icon_img, water_pressure_img, plumber_icon_img, } from '../public/Assets/Images';
+import { extra_icon_img, heating_icon_img, setting_icon_img, pipes_icon_img, water_pressure_img, plumber_icon_img, } from '../public/Assets/Images/index';
 import {useTranslation} from 'react-i18next';
 import Image from 'next/image';
 

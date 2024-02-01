@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { ariston_img, ferroli_img, baxi_img, unit_img, viesmann_img } from '../public/Assets/Images'
+import { ariston_img, ferroli_img, baxi_img, unit_img, viesmann_img } from '../public/Assets/Images/index'
 import { useTranslation } from 'react-i18next';
 import { instance } from '../instance/instance';
 import { Swiper, SwiperSlide } from 'swiper/react';

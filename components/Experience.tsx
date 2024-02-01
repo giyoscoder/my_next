@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import {experience_img} from '../public/Assets/Images';
+import {experience_img} from '../public/Assets/Images/index';
 import {useTranslation} from 'react-i18next'
 import Image from 'next/image';
 

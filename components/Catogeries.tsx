@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef } from 'react'
-import { contour_floor_img, contour_gas_img, contour_img, contour_prevention_img, contour_wall_img, first_slider_one, first_slider_two, first_slider_three, third_slider_one, third_slider_two, fourth_slider_one } from '../public/Assets/Images';
+import { contour_floor_img, contour_gas_img, contour_img, contour_prevention_img, contour_wall_img, first_slider_one, first_slider_two, first_slider_three, third_slider_one, third_slider_two, fourth_slider_one } from '../public/Assets/Images/index';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';

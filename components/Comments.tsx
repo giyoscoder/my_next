@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import { avatar, person_one_img, person_two_img, person_three_img, person_four_img, person_five_img } from '../public/Assets/Images'
+import { avatar, person_one_img, person_two_img, person_three_img, person_four_img, person_five_img } from '../public/Assets/Images/index'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
