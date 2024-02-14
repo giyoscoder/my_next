@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import { extra_icon_img, icon_elector, icon_remont, icon_setting, icon_boiler, icon_boiler_repair, icon_dilever, icon_two_boiler, icon_wall_repair, repair_icon_img, icon_clean, } from '../../public/Assets/Images';
 import ContourService from '../../CElements/ContourService/ContourService';
 import Company from '../../CElements/Company/Company';
 import Showcase from '../../CElements/CShowcase/Showcase';
+import MainCallButton from '@/components/MainCallButton';
 
 const DATA = [
     { id: 1, text: 'Бесплатный выезд мастеров', icon: icon_dilever },
@@ -38,6 +40,7 @@ const Viessmann = () => {
             <section>
                 <Company text='О компании' data={TEXT_LIST} />
             </section>
+            <MainCallButton/>
         </div>
     )
 }

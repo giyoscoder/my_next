@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import Showcase from '../../CElements/CShowcase/Showcase';
 import { icon_clean, icon_filter, icon_faulty, icon_ventilation, icon_elector, icon_setting, } from '../../public/Assets/Images';
 import ContourService from '../../CElements/ContourService/ContourService';
 import Company from '../../CElements/Company/Company';
+import MainCallButton from '@/components/MainCallButton';
 const DATA = [
     { id: 1, text: 'Чистка горелки котла', icon: icon_clean },
     { id: 3, text: 'Замена теплообменника', icon: icon_filter },
@@ -28,6 +30,7 @@ const Kiturami = () => {
             <section>
                 <Company text='О компании' data={TEXT_LIST} />
             </section>
+            <MainCallButton/>
         </div>
     )
 }
