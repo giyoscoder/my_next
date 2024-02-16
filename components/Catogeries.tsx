@@ -22,8 +22,8 @@ const Catogeries = () => {
     return (
         <section className='my-16 md:my-24'>
             <div className="container">
-                <h1 className='font-russo text-[28px] md:text-5xl font-normal leading-[38px] md:leading-[44px] -tracking-[0.96px]'>{t('title')}</h1>
-                <p className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[28px] md:leading-[30px] max-w-[768px] mt-4 md:mt-5'>{t('about')}</p>
+                <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[38px] md:leading-[44px] -tracking-[0.96px]'>{t('title')}</h2>
+                <p className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[28px] md:leading-[30px]  mt-4 md:mt-5'>{t('about')}</p>
 
                 <div className='grid grid-cols-1 md:grid-cols-6 gap-6 md:gap-8 mt-12 md:mt-16'>
 

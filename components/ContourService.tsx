@@ -9,7 +9,7 @@ const ContourService = () => {
     return (
         <section className='my-16 md:my-24'>
             <div className="container">
-                <h1 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('title')}</h1>
+                <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('title')}</h2>
                 <p className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-4 md:mt-5'>{t('about')}</p>
                 <div className='grid md:grid-cols-2 grid-flow-row-dense gap-6 md:gap-8 mt-12 md:mt-16'>
 
@@ -74,6 +74,14 @@ const ContourService = () => {
                     </div>
                 </div>
                 <p className='text-lg md:text-xl text-center md:text-start text-lightColor font-jura font-normal leading-[30px] mt-12 md:mt-8'>{t('info')}</p>
+                <div className='mt-10 md:mt-20'>
+                    <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('rule_one')}</h2>
+                    <h2 className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-3 md:mt-4'>{t('rule_one_about')}</h2>
+                    <h3 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px] mt-10 md:mt-20'>{t('rule_two')}</h3>
+                    <h3 className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-4 md:mt-5'>{t('rule_two_about')}</h3>
+                    <h3 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px] mt-10 md:mt-20'>{t('rule_three')}</h3>
+                    <h3 className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-4 md:mt-5'>{t('rule_three_about')}</h3>
+                </div>
             </div>
         </section>
     )

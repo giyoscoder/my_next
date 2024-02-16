@@ -37,7 +37,7 @@ const Superiority = () => {
         <section className='pt-16 md:pt-24'>
             <div className="container">
                 <div>
-                    <h1 className='font-russo text-darkColor text-[28px] md:text-5xl font-normal leading-[38px] md:leading-[44px] -tracking-[0.96px]'>{t('title')}</h1>
+                    <h2 className='font-russo text-darkColor text-[28px] md:text-5xl font-normal leading-[38px] md:leading-[44px] -tracking-[0.96px]'>{t('title')}</h2>
                     <p className='font-jura text-lightColor text-lg md:text-xl font-normal leading-7 md:leading-[30px] max-w-[511px] mt-4 md:mt-5'>{t('about')}</p>
                 </div>
 

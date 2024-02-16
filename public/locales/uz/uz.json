@@ -41,7 +41,7 @@
     },
     "catogeries": {
         "title": "Ishonchli xizmat",
-        "about": "Biz hamma turdagi va brenddagi kotyollarni qulay narxda, qisqa muddatda professional ta'mir qilishni taklif etamiz. ",
+        "about": "Biz barcha turdagi va markali kotyollarni eng qisqa vaqt ichida arzon narxlarda professional ta'mirlashni taklif etamiz. Toshkent shahridagi kotyollarni ta'mirlash xizmatimiz ishonchlilik va sifat kafolatidir. Biz isitish uydagi qulaylikning asosiy jihati ekanligini tushunamiz, shuning uchun biz sizning uskunangizga tezkor va professional xizmat ko'rsatishga intilamiz. Bizning yuqori malakali mutaxassislarimiz turli marka va modeldagi kotyollarni ta'mirlash bo'yicha katta tajribaga ega. Biz kotyolingizning uzoq muddatli ishlashini kafolatlash uchun faqat original ehtiyot qismlar va zamonaviy jihozlardan foydalanamiz. Biz sizning vaqtingiz va qulayligingizni qadrlaymiz, shuning uchun biz moslashuvchan xizmat ko'rsatish jadvalini, shuningdek, agar kerak bo'lsa, uyga tez tashrif buyurishni taklif qilamiz. Maqsadimiz shunchaki muammoni bartaraf etish emas, balki isitish uskunangizning barqaror va samarali ishlashini ta'minlashdir.Kotyolingizni ta'mirlashni professionallarga topshiring va ortiqcha ovoragarchilik va tashvishlarsiz xonadoningizdagi issiqlik va qulaylikdan bahramand bo'ling.",
         "contour": "Ikki konturli kotyollarning ta'miri",
         "contour_wall": "Devordagi kotyollarning ta'miri",
         "contour_floor": "Polga o'rnatiladigan kotyollarning ta'miri",
@@ -50,7 +50,7 @@
     },
     "contourService": {
         "title": "Ishonchli xizmat",
-        "about": "Gaz devor va yotqozon kotyollarini ta'mir qilish bo'yicha",
+        "about": "Bizning mutaxassislar jamoasi sizning uskunangizga yuqori sifatli va ishonchli xizmat ko'rsatadi. Biz uyga tez tashrif buyurish, original ehtiyot qismlardan foydalanish va yuqori darajadagi mahoratni kafolatlaymiz. O'zingizning qulayligingizni xavf ostiga qo'ymang - professionallarga murojaat qiling va kotyolingizning ishonchli ishlashidan zavqlaning!",
         "card_one": "Profilaktika",
         "card_one_price": "400000 so'm dan",
         "card_two": "Turbinani almashtirish",
@@ -63,12 +63,18 @@
         "card_five_price": "450000 so'm dan",
         "card_six": "Manostatni almashtirish",
         "card_six_price": "380000 so'm dan",
-        "info": "So'rovni qoldirish orqali siz shaxsiy ma'lumotlarni qayta ishlashga rozilik bildirasiz"
+        "info": "So'rovni qoldirish orqali siz shaxsiy ma'lumotlarni qayta ishlashga rozilik bildirasiz",
+        "rule_one":"Isitish uskunasining noto'g'ri ishlashining umumiy sabablari va belgilari",
+        "rule_one_about": "Isitish uskunalari, har qanday uskuna kabi, muvaffaqiyatsiz bo'lishi mumkin.",
+        "rule_two":"Nosozliklar sabablari",
+        "rule_two_about":"Sovutish suyuqligining etarli emasligi: oqish, tiqilib qolish, tizimning bosimini yo'qotish.  Past bosim: sirkulyatsiya pompasi, havo cho'ntaklari bilan bog'liq muammolar. Filtrlar, quvurlar, radiatorlar tiqilib qolgan. Masshtab: issiqlik almashtirgichda shkala shakllanishi. Avtomatlashtirishning noto'g'ri ishlashi: termostat, sensorlar, boshqaruv tizimi. Noto'g'ri o'rnatish: tizimni o'rnatish paytida xatolar.  Past sifatli komponentlardan foydalanish: xavfsizlik va ishonchlilik talablariga javob bermaydigan arzon ehtiyot qismlar",
+        "rule_three":"Muammoning belgilari",
+        "rule_three_about":"Noto'g'ri isitish: Batareyalar sovuq yoki boshqacha yonadi. Shovqin va shovqin: isitish tizimidan begona tovushlar keladi.Haroratning pasayishi: xona sovuq bo'ladi.   Oqish: quvurlardan, radiatorlardan, qozondan suv oqadi.   Kondensatsiyaning ko'rinishi: quvurlar va radiatorlarda.   Kotyol yoqilmaydi: ateşleme, gaz ta'minoti, elektr ta'minoti bilan bog'liq muammolar.   Displeydagi xato: xato xabari. Nosozlikning birinchi belgilari paydo bo'lganda, darhol mutaxassis bilan bog'lanishingiz kerak. Isitish uskunasini o'zingiz ta'mirlashga urinmang, bu xavfli bo'lishi mumkin! Kotyolingizni professionallarga ishoning!“ServesKotlov.uz” servis markazi isitish uskunalarining uzluksiz ishlashini ta’minlashda sizning ishonchli yordamchingizdir."
     },
     "experience": {
         "pre_title": "Kompaniya haqida",
         "title": "Biz siz uchun 15 yildan beri ishlaymiz",
-        "about": "Biz bozorda ko'p yillardan beri ishlaymiz va o'zimizni ishonchli va mas'uliyatli hamkor sifatida ko'rsatdik. Bizning maqsadimiz yuqori sifatli ishlarni ta'minlash va mijozlarimizning ehtiyojlarini qondirishdir. Kotyolxonalar yoki sanitariya-tesisat bilan bog'liq muammolar noqulaylik va noqulaylik tug'dirishi mumkinligini tushunamiz, shuning uchun biz tezda javob berishga va har qanday muammolarni tezda hal qilishga intilamiz.",
+        "about": "Kompaniyamiz Toshkent shahridagi kotyollariga xizmat ko'rsatish sohasida ishonchli hamkor hisoblanadi. 15 yildan ortiq tajribaga ega bo'lgan holda, biz yuqori sifatli xizmat ko'rsatish va 10 dan ortiq mutaxassislarimizning professionalligi tufayli bozor yetakchisiga aylanganimizdan faxrlanamiz. Biz sizning vaqtingiz va qulayligingizni qadrlaymiz, shuning uchun biz malakali jamoamizning Toshkentning istalgan nuqtasiga tezda jo'nab ketishini ta'minlaymiz. Bizning moslashuvchan rejalashtirish tizimimiz bizga sizga mos keladigan vaqtda mavjud bo'lish imkonini beradi. Biz har bir mijozga alohida e'tibor qaratamiz, ularning kutganlaridan oshib ketishga va ularning isitish ehtiyojlariga uzoq muddatli yechimlarni taqdim etishga intilamiz. Bizning maqsadimiz nafaqat xizmatlarni taqdim etish, balki mijozlarimiz bilan xizmatlarimizning sifati va ishonchliligiga asoslangan ishonchli munosabatlarni o'rnatishdir.",
         "phone": "Telefon raqami: +998951575050"
     },
     "slide_one": {
