@@ -12,7 +12,7 @@ const Showcase = ({ img, title, about }: { img?: any, title: string, about: stri
         <p className='text-lightColor text-center md:text-start text-base md:text-2xl font-jura font-semibold leading-[28.8px] mt-4 md:mt-6'>{about}</p>
       </div>
       <div className='py-10'>
-        <Image src={img ? img : brand_showcase} alt="" />
+        <Image src={img ? img : brand_showcase} alt="img" priority  />
       </div>
     </div>
   )

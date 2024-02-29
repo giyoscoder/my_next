@@ -29,7 +29,7 @@ const MainCallButton = () => {
     return (
         <div>
             <div className='relative'>
-                {!isButtonVisible && <a href='tel:+998 95-157-50-50' className='block  fixed bottom-5 z-[60] left-1/2 -translate-x-[50%]'>
+                {!isButtonVisible && <a href='tel:+998917715656' className='block  fixed bottom-5 z-[60] left-1/2 -translate-x-[50%]'>
                     <button className='bg-mainColor animate-bounce w-full py-4 px-6 rounded-lg text-white flex items-center gap-2 mx-auto'><FaPhoneAlt /> <span className='font-medium text-xs sm:text-base'>{t('button')}</span></button>
                 </a>}
             </div>

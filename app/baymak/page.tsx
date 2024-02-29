@@ -28,7 +28,7 @@ const Baymak = () => {
         <div className='container'>
             <Showcase title='Service Center Baymak' about='Постгарантийное обслуживание' />
             <section id='about'>
-                <h1 className='text-darkColor text-[32px] text-center md:text-[48px] font-russo font-normal leading-[44px] md:leading-[96px] -tracking-[1.6px] '>Наши услуги</h1>
+                <h2 className='text-darkColor text-[32px] text-center md:text-[48px] font-russo font-normal leading-[44px] md:leading-[96px] -tracking-[1.6px] '>Наши услуги</h2>
                 <div className='grid md:grid-cols-2 mx-auto text-center justify-center gap-6 md:gap-8 mt-12 md:mt-14'>
                     {DATA?.map(({ id, text, icon }) => <ContourService key={id} text={text} icon={icon} />)}
                 </div>

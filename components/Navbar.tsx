@@ -105,7 +105,7 @@ const Navbar = () => {
                             </ul>
 
                         </div>}
-                        <a href='tel:+998951575050' className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998951575050</span></a>
+                        <a href='tel:+998917715656' className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998917715656</span></a>
                         <div onClick={navbarHadler} className='md:hidden text-darkColor cursor-pointer'>
                             <FaBars size='24' />
                         </div>
@@ -140,8 +140,8 @@ const Navbar = () => {
                             <li><Scrollink onClick={() => navbarHadler()} to='contact' spy={true} smooth={true} offset={-100}>{t('contact')} </Scrollink></li>
                         </ul>
 
-                        <NextLink href="tel:+998 95-157-50-50" className='block'>
-                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998951575050</span></button>
+                        <NextLink href="tel:+998998917715656" className='block'>
+                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998917715656</span></button>
                         </NextLink>
 
                         {/* language */}
