@@ -71,7 +71,7 @@ const Navbar = () => {
                                     <NextLink href='/airfel' className={`p-[10px] rounded-t-2xl transition-all duration-300 hover:bg-mainColor hover:text-white`}>Airfel</NextLink>
                                     {/* <Link to='' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ariston</Link> */}
                                     <NextLink href='/atlantic' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Atlantic</NextLink>
-                                    {/* <Link to='' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</Link> */}
+                                    <NextLink href='baymak' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</NextLink>
                                     <NextLink href='/baxi' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baxi</NextLink>
                                     <NextLink href='/ferroli' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ferroli</NextLink>
                                     <NextLink href='/kiturami' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Kiturami</NextLink>
@@ -128,7 +128,7 @@ const Navbar = () => {
                                 <div className={`w-[200px] text-base divide-y-[1px] text-center transition-all duration-300 flex flex-col text-lightColor font-semibold bg-white shadow-sm rounded-2xl ${!brands && ' duration-500 hidden'}`}>
                                     <NextLink href='/airfel' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Airfel</NextLink>
                                     <NextLink href='/atlantic' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Atlantic</NextLink>
-                                    {/* <NextLink href='' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</NextLink> */}
+                                    <NextLink href='baymak' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</NextLink>
                                     <NextLink href='/baxi' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baxi</NextLink>
                                     <NextLink href='/ferroli' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ferroli</NextLink>
                                     <NextLink href='/kiturami' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Kiturami</NextLink>
