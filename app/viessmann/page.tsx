@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import { extra_icon_img, icon_elector, icon_remont, icon_setting, icon_boiler, icon_boiler_repair, icon_dilever, icon_two_boiler, icon_wall_repair, repair_icon_img, icon_clean, } from '../../public/Assets/Images';
 import ContourService from '../../CElements/ContourService/ContourService';
@@ -89,7 +89,7 @@ const Viessmann = () => {
                 <Company text='Процесс ремонта котлов Viessmann: Шаги к исправной работе' data={TEXT_LIST_FOUR} />
                 <Company text='Гарантия качества: Доверьте ваш котел Viessmann профессионалам' data={TEXT_LIST_FIVE} />
             </section>
-            <MainCallButton/>
+            {/* <MainCallButton/> */}
         </div>
     )
 }

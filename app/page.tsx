@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Showcase from '../components/Showcase';
 import Superiority from '../components/Superiority';
@@ -7,14 +8,11 @@ import Catogeries from '../components/Catogeries';
 import ContourService from '../components/ContourService';
 import Experience from '../components/Experience';
 import Comments from '../components/Comments';
-import Contact from '../components/Contact';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import MainCallButton from '@/components/MainCallButton';
 
 const Main = () => {
     return (
         <section>
-            {/* <Navbar /> */}
             <Showcase />
             <Superiority />
             <Cooperation />
@@ -23,8 +21,7 @@ const Main = () => {
             <ContourService />
             <Experience />
             <Comments />
-            {/* <Contact /> */}
-            {/* <Footer /> */}
+            <MainCallButton />
         </section>
     )
 }

@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import Showcase from '../../CElements/CShowcase/Showcase';
 import { icon_clean, icon_filter, icon_faulty, icon_ventilation, icon_elector, icon_setting, } from '../../public/Assets/Images';
@@ -71,7 +71,7 @@ const Kiturami = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Kiturami в Ташкенте' data={TEXT_LIST_THREE} />
                 <Company text='Процесс ремонта котлов Kiturami: Шаги к вашему спокойствию' data={TEXT_LIST_FOUR} />
             </section>
-            <MainCallButton />
+            {/* <MainCallButton /> */}
         </div>
     )
 }

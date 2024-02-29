@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import React from 'react'
 import Showcase from '../../CElements/CShowcase/Showcase'
 import { extra_icon_img, icon_remont, icon_setting, icon_boiler, icon_boiler_repair, icon_dilever, icon_two_boiler, icon_wall_repair, repair_icon_img } from '../../public/Assets/Images';
@@ -62,7 +62,7 @@ const Airfel = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Airfel в Ташкенте' data={TEXT_LIST_TWO} />
                 <Company text='Процесс ремонта котлов Airfel: Шаги к вашему комфорту' data={TEXT_LIST_THREE} />
             </section>
-            <MainCallButton />
+            {/* <MainCallButton /> */}
         </div>
     )
 }

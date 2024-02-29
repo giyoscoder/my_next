@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import Showcase from '../../CElements/CShowcase/Showcase'
 import ContourService from '../../CElements/ContourService/ContourService'
@@ -66,7 +66,7 @@ const Unit = () => {
         <Company text='Наши услуги' data={TEXT_LIST_TWO} />
         <Company text='Процесс ремонта котлов Unit: Шаги к исправной работе' data={TEXT_LIST_THREE} />
       </section>
-      <MainCallButton/>
+      {/* <MainCallButton/> */}
     </div>
   )
 }

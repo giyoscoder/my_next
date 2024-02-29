@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React from 'react'
 import Showcase from '../../CElements/CShowcase/Showcase';
 import { extra_icon_img, icon_elector, icon_remont, icon_setting, icon_boiler, icon_boiler_repair, icon_dilever, icon_two_boiler, icon_wall_repair, repair_icon_img, icon_clean, } from '../../public/Assets/Images';
@@ -71,7 +71,7 @@ const Baxi = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Baxi в Ташкенте' data={TEXT_LIST_THREE} />
                 <Company text='Процесс ремонта котлов Baxi: Шаги к вашему комфорту' data={TEXT_LIST_FOUR} />
             </section>
-            <MainCallButton/>
+            {/* <MainCallButton/> */}
         </div>
     )
 }
