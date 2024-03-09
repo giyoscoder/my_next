@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import I18NextProvider from "@/components/I18NextProvider";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
-
+import MyApp from "./_app";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -36,6 +36,7 @@ export default function RootLayout({
           {children}
           <Contact />
           <Footer />
+          <MyApp />
         </body>
       </html>
     </I18NextProvider>
