@@ -71,7 +71,7 @@ const Baxi = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Baxi в Ташкенте' data={TEXT_LIST_THREE} />
                 <Company text='Процесс ремонта котлов Baxi: Шаги к вашему комфорту' data={TEXT_LIST_FOUR} />
             </section>
-            {/* <MainCallButton/> */}
+            <MainCallButton/>
         </div>
     )
 }

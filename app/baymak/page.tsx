@@ -36,7 +36,7 @@ const Baymak = () => {
             <section>
                 <Company text='О компании' data={TEXT_LIST} />
             </section>
-            {/* <MainCallButton/> */}
+            <MainCallButton/>
         </div>
     )
 }

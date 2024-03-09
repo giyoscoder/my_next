@@ -71,7 +71,7 @@ const Ferroli = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Ferroli в Ташкенте' data={TEXT_DATA_THREE}/>
                 <Company text='Процесс ремонта котлов Ferroli: Шаги к вашему спокойствию' data={TEXT_DATA_FOUR}/>
             </section>
-            {/* <MainCallButton/> */}
+            <MainCallButton/>
         </div>
     )
 }

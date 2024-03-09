@@ -54,7 +54,7 @@ const Atlantic = () => {
                 <Company text='Ваш надежный помощник в мире отопительной техники' data={TEXT_LIST_TWO} />
                 <Company text='Сервисное обслуживание котлов Atlantic и Airfel - залог вашего спокойствия' data={TEXT_LIST_THREE} />
             </section>
-            {/* <MainCallButton /> */}
+            <MainCallButton />
         </div>
     )
 }

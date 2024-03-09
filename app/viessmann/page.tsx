@@ -89,7 +89,7 @@ const Viessmann = () => {
                 <Company text='Процесс ремонта котлов Viessmann: Шаги к исправной работе' data={TEXT_LIST_FOUR} />
                 <Company text='Гарантия качества: Доверьте ваш котел Viessmann профессионалам' data={TEXT_LIST_FIVE} />
             </section>
-            {/* <MainCallButton/> */}
+            <MainCallButton/>
         </div>
     )
 }
