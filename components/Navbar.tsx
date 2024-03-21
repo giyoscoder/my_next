@@ -69,11 +69,13 @@ const Navbar = () => {
                                 <div onClick={() => setBrands(prev => !prev)} className='flex items-center gap-1'><span>Котлы</span><IoIosArrowDown className={`${brands && 'rotate-180 '} transitio duration-100 text-lightColor mt-1`} /></div>
                                 <div className={`w-[200px] text-base transition-all duration-300 flex flex-col text-lightColor font-semibold bg-white shadow-md absolute rounded-2xl ${brands ? 'opacity-1 top-full' : 'opacity-0 top-9'} `}>
                                     <NextLink href='/airfel' className={`p-[10px] rounded-t-2xl transition-all duration-300 hover:bg-mainColor hover:text-white`}>Airfel</NextLink>
-                                    {/* <Link to='' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ariston</Link> */}
+                                    <NextLink href='/akfa' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Akfa</NextLink>
                                     <NextLink href='/atlantic' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Atlantic</NextLink>
                                     <NextLink href='baymak' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</NextLink>
                                     <NextLink href='/baxi' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baxi</NextLink>
                                     <NextLink href='/ferroli' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ferroli</NextLink>
+                                    <NextLink href='/fondital' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Fondital</NextLink>
+                                    <NextLink href='/rulls' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Rulls</NextLink>
                                     <NextLink href='/kiturami' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Kiturami</NextLink>
                                     {/* <Link to='' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Rulls</Link> */}
                                     <NextLink href='/unit' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Unit</NextLink>
@@ -127,10 +129,13 @@ const Navbar = () => {
 
                                 <div className={`w-[200px] text-base divide-y-[1px] text-center transition-all duration-300 flex flex-col text-lightColor font-semibold bg-white shadow-sm rounded-2xl ${!brands && ' duration-500 hidden'}`}>
                                     <NextLink href='/airfel' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Airfel</NextLink>
+                                    <NextLink href='/akfa' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Akfa</NextLink>
                                     <NextLink href='/atlantic' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Atlantic</NextLink>
                                     <NextLink href='baymak' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baymak</NextLink>
                                     <NextLink href='/baxi' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Baxi</NextLink>
                                     <NextLink href='/ferroli' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Ferroli</NextLink>
+                                    <NextLink href='/fondital' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Fondital</NextLink>
+                                    <NextLink href='/rulls' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Rulls</NextLink>
                                     <NextLink href='/kiturami' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Kiturami</NextLink>
                                     <NextLink href='/unit' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Unit</NextLink>
                                     <NextLink href='/viessmann' className={`p-[5px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Viessmann</NextLink>
