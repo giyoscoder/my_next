@@ -137,6 +137,73 @@ const Servers = () => {
                     </div>
                 </div>
             </div>
+
+
+            <div className='my-[96px]'>
+                <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('comforteco__one_title')}</h2>
+                <div className='grid md:grid-cols-2 grid-flow-row-dense gap-6 md:gap-8 mt-12 md:mt-16'>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={setting_icon_img} alt="setting_icon_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg md:text-xl font-bold '>{t('comforteco__one')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__one_price')}</p>
+                        </div>
+                    </div>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={pipes_icon_img} alt="pipes_icon_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg md:text-xl font-bold '>{t('comforteco__two')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__two_price')}</p>
+                        </div>
+                    </div>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={heating_icon_img} alt="heating_icon_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg md:text-xl font-bold '>{t('comforteco__three')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__three_price')}</p>
+                        </div>
+                    </div>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={water_pressure_img} alt="water_pressure_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg  md:text-xl font-bold '>{t('comforteco__four')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__four_price')}</p>
+                        </div>
+                    </div>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={plumber_icon_img} alt="plumber_icon_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg md:text-xl font-bold '>{t('comforteco__five')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__five_price')}</p>
+                        </div>
+                    </div>
+
+                    <div className='flex items-center gap-7 md:gap-16 p-6 rounded-xl bg-[#F9FAFB] font-jura'>
+                        <div className='min-h-[48px] min-w-[48px] bg-mainColor p-3 rounded-[10px] inline-block'>
+                            <Image width={24} height={500} src={extra_icon_img} alt="extra_icon_img" />
+                        </div>
+                        <div className='space-y-1 md:space-y-2'>
+                            <p className='text-darkColor text-lg md:text-xl font-bold '>{t('comforteco__six')}</p>
+                            <p className='text-lightColor text-base font-normal'>{t('comforteco__six_price')}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
