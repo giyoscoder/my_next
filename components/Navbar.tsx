@@ -6,7 +6,7 @@ import NextLink from 'next/link';
 import { FaPhoneAlt, FaBars, FaTelegram, FaInstagram } from "react-icons/fa";
 // import { BsTelephone } from "react-icons/bs";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import  logo  from '../public/Assets/Images/logo.jpg'
+import logo from '../public/Assets/Images/logo.jpg'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -49,7 +49,7 @@ const Navbar = () => {
         document.addEventListener('scroll', () => {
             setBrands(false)
         })
-        return document.removeEventListener('scroll', () => {})
+        return document.removeEventListener('scroll', () => { })
     }, [])
 
     return (
@@ -67,7 +67,7 @@ const Navbar = () => {
                             {locationPath && <li><Scrollink to='services' spy={true} smooth={true} offset={-150}>{t('reviews')}</Scrollink></li>}
                             {locationPath && <div className='relative z-10'>
                                 <div onClick={() => setBrands(prev => !prev)} className='flex items-center gap-1'><span>Котлы</span><IoIosArrowDown className={`${brands && 'rotate-180 '} transitio duration-100 text-lightColor mt-1`} /></div>
-                                <div className={`w-[200px] text-base transition-all duration-300 flex flex-col text-lightColor font-semibold bg-white shadow-md absolute rounded-2xl ${brands ? 'opacity-1 top-full' : 'opacity-0 top-9'} `}>
+                                <div className={`w-[200px] text-base transition-all duration-300 flex flex-col text-lightColor font-semibold bg-white shadow-md absolute rounded-2xl ${brands ? 'opacity-1 top-full' : 'opacity-0 top-9 hidden'} `}>
                                     <NextLink href='/airfel' className={`p-[10px] rounded-t-2xl transition-all duration-300 hover:bg-mainColor hover:text-white`}>Airfel</NextLink>
                                     <NextLink href='/akfa' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Akfa</NextLink>
                                     <NextLink href='/atlantic' className={`p-[10px] transition-all duration-300 hover:bg-mainColor hover:text-white`}>Atlantic</NextLink>
@@ -85,6 +85,8 @@ const Navbar = () => {
                             <li><Scrollink to='about' spy={true} smooth={true} offset={-100}>{t('companies')}</Scrollink></li>
                             {locationPath && <li><Scrollink to='comments' spy={true} smooth={true} offset={-150}>{t('help')}</Scrollink></li>}
                             <li><Scrollink to='contact' spy={true} smooth={true} offset={-100}>{t('contact')}</Scrollink></li>
+                            <NextLink href='/comforteco'>Comforteco</NextLink>
+
                         </ul>
                         {brands && <div onClick={() => setBrands(false)} className='bg-transparent h-full w-full fixed top-0 left-0' />}
                     </div>

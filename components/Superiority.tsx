@@ -2,13 +2,14 @@
 import React, { useEffect, useState } from 'react'
 import { CiStar, CiDeliveryTruck, CiSearch } from "react-icons/ci";
 import { HiOutlineHandThumbUp } from "react-icons/hi2";
-import { FaPhoneAlt } from "react-icons/fa";
+// import { FaPhoneAlt } from "react-icons/fa";
 import { service_img } from '../public/Assets/Images'
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
-import MainCallButton from './MainCallButton';
+// import MainCallButton from './MainCallButton';
 
-const Superiority = () => {
+const Superiority = ({img}:{img:any}) => {
+    
     const [isButtonVisible, setIsButtonVisible] = useState(false);
     const { t } = useTranslation('superiority');
 
@@ -90,7 +91,7 @@ const Superiority = () => {
                     </div> */}
 
                     <div>
-                        <Image width={500} height={500} src={service_img} alt='servise_img' className='mx-auto mt-10' />
+                        <Image width={500} height={500} src={img} alt='servise_img' className='mx-auto mt-10' />
                     </div>
 
                 </div>

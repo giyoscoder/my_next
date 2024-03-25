@@ -1,16 +1,18 @@
 "use client"
 import React from 'react'
 import { extra_icon_img, heating_icon_img, setting_icon_img, pipes_icon_img, water_pressure_img, plumber_icon_img, } from '../public/Assets/Images/index';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 
 const ContourService = () => {
-    const {t} = useTranslation('contourService')
+    const { t } = useTranslation('contourService');
+
     return (
         <section className='my-16 md:my-24'>
             <div className="container">
                 <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('title')}</h2>
                 <p className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-4 md:mt-5'>{t('about')}</p>
+                
                 <div className='grid md:grid-cols-2 grid-flow-row-dense gap-6 md:gap-8 mt-12 md:mt-16'>
 
                     <div className='flex items-center gap-7 md:gap-16 p-5 md:p-6 rounded-xl bg-[#F9FAFB] font-jura'>
@@ -73,7 +75,9 @@ const ContourService = () => {
                         </div>
                     </div>
                 </div>
+
                 <p className='text-lg md:text-xl text-center md:text-start text-lightColor font-jura font-normal leading-[30px] mt-12 md:mt-8'>{t('info')}</p>
+
                 <div className='mt-10 md:mt-20'>
                     <h2 className='font-russo text-[28px] md:text-5xl font-normal leading-[44px] -tracking-[0.96px]'>{t('rule_one')}</h2>
                     <h2 className='font-jura text-lightColor text-lg md:text-xl font-normal leading-[30px] mt-3 md:mt-4'>{t('rule_one_about')}</h2>

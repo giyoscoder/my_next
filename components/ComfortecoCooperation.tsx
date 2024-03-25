@@ -1,24 +1,23 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { instance } from '../instance/instance';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import { Autoplay } from 'swiper/modules';
+import artel from '@/public/Assets/Images/artel.png';
+import lg from '@/public/Assets/Images/lg.png';
+import symsung from '@/public/Assets/Images/symsung.png';
+import shivaki from '@/public/Assets/Images/shivaki.png';
+import avalon from '@/public/Assets/Images/avalon.png';
+import gree from '../public/Assets/Images/gree.png';
 
+const DATA = [artel, lg, symsung, shivaki, avalon, gree];
 
-const Cooperation = () => {
-    const [cooperateImg, setCooperateImg] = useState([])
+const ComfortecoCooperation = () => {
     const { t } = useTranslation('cooperation');
-
-    useEffect(() => {
-        instance.get('/partners').then(data => setCooperateImg(data?.data?.data))
-    }, [])
-
 
     return (
         <section className='bg-[#F9FAFB] py-16 md:py-[42px] mt-16 md:mt-24'>
@@ -33,10 +32,10 @@ const Cooperation = () => {
                     spaceBetween={60}
                     breakpoints={{
                         320: {
-                            slidesPerView:3,
+                            slidesPerView: 3,
                             spaceBetween: 30
                         },
-                        768:{
+                        768: {
                             slidesPerView: 5,
                             spaceBetween: 60
                         }
@@ -44,17 +43,17 @@ const Cooperation = () => {
                     autoplay={{
                         delay: 300,
                         disableOnInteraction: true,
-                        waitForTransition:true
+                        waitForTransition: true
                     }}
                     loop={true}
                     modules={[Autoplay]}
                     className="mySwiper cooperation_slider"
                 >
-                    {cooperateImg.map(a => <SwiperSlide key={a}><img src={a} alt="" /></SwiperSlide>)}
+                    {DATA.map((a: any) => <SwiperSlide key={a}><img src={a} alt="img" /></SwiperSlide>)}
                 </Swiper>
             </div>
         </section>
     )
 }
 
-export default Cooperation
+export default ComfortecoCooperation
