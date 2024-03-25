@@ -145,6 +145,7 @@ const Navbar = () => {
                             </div>}
                             {locationPath && <li><Scrollink onClick={() => navbarHadler()} to='comments' spy={true} smooth={true} offset={-150}>{t('help')}</Scrollink></li>}
                             <li><Scrollink onClick={() => navbarHadler()} to='contact' spy={true} smooth={true} offset={-100}>{t('contact')} </Scrollink></li>
+                            <NextLink href='/comforteco'>Comforteco</NextLink>
                         </ul>
 
                         <NextLink href="tel:+998998917715656" className='block'>
