@@ -7,12 +7,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
-import artel from '@/public/Assets/Images/artel.png';
-import lg from '@/public/Assets/Images/lg.png';
-import symsung from '@/public/Assets/Images/symsung.png';
-import shivaki from '@/public/Assets/Images/shivaki.png';
-import avalon from '@/public/Assets/Images/avalon.png';
-import gree from '../public/Assets/Images/gree.png';
+import { artel, lg, symsung, shivaki, avalon, gree } from '@/public/Assets/Images';
+
+import Image from "next/image";
 
 const DATA = [artel, lg, symsung, shivaki, avalon, gree];
 
@@ -49,7 +46,17 @@ const ComfortecoCooperation = () => {
                     modules={[Autoplay]}
                     className="mySwiper cooperation_slider"
                 >
-                    {DATA.map((a: any) => <SwiperSlide key={a}><img src={a} alt="img" /></SwiperSlide>)}
+                    {DATA.map((a: any) => <SwiperSlide key={a}>
+                        <Image
+                            src={a}
+                            alt="img"
+                            className="object-cover cursor-pointer"
+                            // height="100px"
+                            // width="320px"
+                            layout="intrinsic"
+                        />
+
+                    </SwiperSlide>)}
                 </Swiper>
             </div>
         </section>
