@@ -17,6 +17,7 @@ const Contact = () => {
   const { register, handleSubmit, reset, watch, formState: { errors, isSubmitSuccessful, isLoading, isSubmitted, isValid } } = useForm<Inputs>()
   const [data, setData] = useState<any>();
   const [error, setErrors] = useState(false);
+  const [phone, setPhone]= useState<any>()
 
 
   const submitHandler = (e: Inputs) => {
@@ -54,6 +55,13 @@ const Contact = () => {
     setErrors(false)
   }, [watch('phone')])
 
+  useEffect(()=>{
+    const commentsHandler = async () => {
+      await instance.get('/settings').then(data => setPhone(data?.data))
+  }
+
+  commentsHandler()
+  }, [])
 
   const { t } = useTranslation('contact')
 
@@ -80,11 +88,11 @@ const Contact = () => {
 
             <div className='md:space-y-5  gap-4 flex  items-start md:flex-col'>
               <div className='bg-[#F0F0FF] p-[6px] rounded-full inline-block'>
-                <a href='tel:+998917715656' target='_blank' className='bg-[#E8E7FF] p-[6px] rounded-full text-mainColor block'><FaPhoneAlt size={'24'} /></a>
+                <a href={`tel:+998${phone?.data?.phone}`} target='_blank' className='bg-[#E8E7FF] p-[6px] rounded-full text-mainColor block'><FaPhoneAlt size={'24'} /></a>
               </div>
               <div className='font-jura'>
                 <p className='text-lg md:text-xl text-darkColor font-bold'>{t('phone')}</p>
-                <p className='text-base text-mainColor font-semibold leading-6'>+998917715656</p>
+                <p className='text-base text-mainColor font-semibold leading-6'>+998{phone?.data?.phone}</p>
               </div>
             </div>
 
