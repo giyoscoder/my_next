@@ -41,8 +41,6 @@ const Showcase = ({ title, about, img }: { title: string, about: string, img?: a
         }
     }
 
-    
-
     useEffect(() => {
         setError(false)
     }, [watch('name')])

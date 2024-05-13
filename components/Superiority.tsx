@@ -6,10 +6,12 @@ import { HiOutlineHandThumbUp } from "react-icons/hi2";
 import { service_img } from '../public/Assets/Images'
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import { instance } from '@/instance/instance';
 // import MainCallButton from './MainCallButton';
 
 const Superiority = ({img}:{img:any}) => {
-    
+   
+
     const [isButtonVisible, setIsButtonVisible] = useState(false);
     const { t } = useTranslation('superiority');
 

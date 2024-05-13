@@ -25,7 +25,7 @@ function MyApp() {
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             </Head>
             <body>
-                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KZN196LQ65" />
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KZN196LQ65" ></Script>
             </body>
         </div>
     )

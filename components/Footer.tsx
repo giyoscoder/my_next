@@ -4,12 +4,20 @@ import { Link } from 'react-scroll';
 import { FaTelegram, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 import { usePathname } from 'next/navigation';
+import { instance } from '@/instance/instance';
 const Footer = () => {
     const [locationPath, setLocationPath] = useState(false)
     const location = usePathname();
     const { t } = useTranslation('footer')
+    const [phone, setPhone] = useState<any>()
 
     useEffect(() => {
+        
+        const commentsHandler = async () => {
+            await instance.get('/settings').then(data => setPhone(data?.data))
+        }
+    
+        commentsHandler()
         if (location == '/') setLocationPath(true)
     }, [location]);
 
@@ -30,7 +38,7 @@ const Footer = () => {
                         <a href="https://t.me/servis_kotlov_tashkent" target='_black'>
                             <FaTelegram size={24} />
                         </a>
-                        <a href="tel:+998 95-157-50-50"><FaWhatsapp size={24} /></a>
+                        <a href={`tel:+998${phone?.data?.phone}`}><FaWhatsapp size={24} /></a>
                         <a href="https://www.instagram.com/serveskotlov.uz/" target='_black'>
                             <FaInstagram size={24} />
                         </a>

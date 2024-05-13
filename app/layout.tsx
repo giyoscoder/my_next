@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import I18NextProvider from "@/components/I18NextProvider";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
-import MyApp from "./_app";
+// import MyApp from "./_app";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   },
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,11 +34,12 @@ export default function RootLayout({
     <I18NextProvider>
       <html lang="en">
         <body className={inter.className}>
+
           <Navbar />
           {children}
           <Contact />
           <Footer />
-          <MyApp />
+          {/* <MyApp /> */}
         </body>
       </html>
     </I18NextProvider>

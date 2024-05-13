@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { instance } from '@/instance/instance';
 
 
 const Navbar = () => {
@@ -20,8 +21,8 @@ const Navbar = () => {
     const [lang, setLang] = useState('Ru');
     const [navDrop, setNavDrop] = useState(false)
     const [locationPath, setLocationPath] = useState(false);
-    const [brands, setBrands] = useState(false)
-
+    const [brands, setBrands] = useState(false);
+    const [phone, setPhone] = useState<any>()
 
     const { t, i18n } = useTranslation('navbar');
 
@@ -46,11 +47,21 @@ const Navbar = () => {
     }, [pathname])
 
     useEffect(() => {
+
+        const commentsHandler = async () => {
+            await instance.get('/settings').then(data => setPhone(data?.data))
+        }
+
+        commentsHandler()
+
         document.addEventListener('scroll', () => {
             setBrands(false)
         })
         return document.removeEventListener('scroll', () => { })
+
+
     }, [])
+    
 
     return (
         <nav className='fixed top-0 left-0 w-full bg-white z-[100]'>
@@ -85,7 +96,7 @@ const Navbar = () => {
                             <li><Scrollink to='about' spy={true} smooth={true} offset={-100}>{t('companies')}</Scrollink></li>
                             {locationPath && <li><Scrollink to='comments' spy={true} smooth={true} offset={-150}>{t('help')}</Scrollink></li>}
                             <li><Scrollink to='contact' spy={true} smooth={true} offset={-100}>{t('contact')}</Scrollink></li>
-                            <NextLink href='/comforteco'>Comforteco</NextLink>
+                            <NextLink href='http://comforteco.uz'>Comforteco</NextLink>
 
                         </ul>
                         {brands && <div onClick={() => setBrands(false)} className='bg-transparent h-full w-full fixed top-0 left-0' />}
@@ -109,7 +120,7 @@ const Navbar = () => {
                             </ul>
 
                         </div>}
-                        <a href='tel:+998917715656' className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998917715656</span></a>
+                        <a href={`tel:+998${phone?.data?.phone}`} className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone}</span></a>
                         <div onClick={navbarHadler} className='md:hidden text-darkColor cursor-pointer'>
                             <FaBars size='24' />
                         </div>
@@ -145,11 +156,11 @@ const Navbar = () => {
                             </div>}
                             {locationPath && <li><Scrollink onClick={() => navbarHadler()} to='comments' spy={true} smooth={true} offset={-150}>{t('help')}</Scrollink></li>}
                             <li><Scrollink onClick={() => navbarHadler()} to='contact' spy={true} smooth={true} offset={-100}>{t('contact')} </Scrollink></li>
-                            <NextLink href='/comforteco'>Comforteco</NextLink>
+                            <NextLink href='http://comforteco.uz'>Comforteco</NextLink>
                         </ul>
 
-                        <NextLink href="tel:+998998917715656" className='block'>
-                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998917715656</span></button>
+                        <NextLink href={`tel:+998${phone?.data?.phone}`} className='block'>
+                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone}</span></button>
                         </NextLink>
 
                         {/* language */}
