@@ -40,7 +40,6 @@ const Main = () => {
             <ContourService />
             <Experience />
             <Comments />
-            <MainCallButton />
         </section>
     )
 }

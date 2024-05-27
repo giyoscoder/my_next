@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import I18NextProvider from "@/components/I18NextProvider";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import MainCallButton from "@/components/MainCallButton";
 // import MyApp from "./_app";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Contact />
+          <MainCallButton />
           <Footer />
           {/* <MyApp /> */}
         </body>

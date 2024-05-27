@@ -62,7 +62,7 @@ const Airfel = () => {
                 <Company text='Преимущества выбора нашего сервисного центра для ремонта котлов Airfel в Ташкенте' data={TEXT_LIST_TWO} />
                 <Company text='Процесс ремонта котлов Airfel: Шаги к вашему комфорту' data={TEXT_LIST_THREE} />
             </section>
-            <MainCallButton />
+            {/* <MainCallButton /> */}
         </div>
     )
 }
