@@ -120,7 +120,7 @@ const Navbar = () => {
                             </ul>
 
                         </div>}
-                        <a href={`tel:+998${phone?.data?.phone ? phone?.data?.phone : 991231273}`} className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone ? phone?.data?.phone : 991231273}</span></a>
+                        <a href={`tel:+998${phone?.data?.phone ? phone?.data?.phone : 991231373}`} className='hidden bg-mainColor py-3 px-5 rounded-lg text-white lg:flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone ? phone?.data?.phone : 991231373}</span></a>
                         <div onClick={navbarHadler} className='md:hidden text-darkColor cursor-pointer'>
                             <FaBars size='24' />
                         </div>
@@ -159,8 +159,8 @@ const Navbar = () => {
                             <NextLink href='http://comforteco.uz'>Comforteco</NextLink>
                         </ul>
 
-                        <NextLink href={`tel:+998${phone?.data?.phone}`} className='block'>
-                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone}</span></button>
+                        <NextLink href={`tel:+998${phone?.data?.phone ? phone?.data?.phone : 991231373}`} className='block'>
+                            <button className='bg-mainColor py-3 px-5 rounded-lg mx-auto  text-white flex items-center gap-2'><FaPhoneAlt /> <span className='font-medium text-base'>+998{phone?.data?.phone ? phone?.data?.phone : 991231373}</span></button>
                         </NextLink>
 
                         {/* language */}
